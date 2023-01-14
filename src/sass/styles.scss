@@ -15,3 +15,17 @@
   display: flex;
   justify-content: space-between;
 }
+
+.hero__form-booking {
+  display: flex;
+  height: 595px;
+  min-width: 288px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff;
+}
+
+.form-booking {
+  display: flex;
+}
