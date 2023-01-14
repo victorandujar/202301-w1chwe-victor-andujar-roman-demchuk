@@ -36,24 +36,29 @@
 }
 
 .form-booking {
-  height: 595px;
-  min-width: 288px;
+  min-height: 595px;
+  min-width: 100%;
   background-color: #fff;
 
   &__items {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    &__button {
-      background-color: #ff7757;
-    }
   }
 }
 
 .items__item {
   display: flex;
   flex-direction: column;
+}
+
+.items__item label {
+  font-family: typographys.$secondary-typography;
+  text-transform: uppercase;
+}
+
+.items__item input {
+  font-family: typographys.$main-typography;
 }
 
 .logo {
