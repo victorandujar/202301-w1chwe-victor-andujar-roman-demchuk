@@ -13,4 +13,10 @@
 
 .welcome-section__photo {
   position: absolute;
+  padding-top: 35.6px;
+}
+
+.welcome-section__header {
+  display: flex;
+  justify-content: space-between;
 }
