@@ -5,15 +5,28 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
   width: 320px;
   height: 1210px;
   background: url("/src/images/main-photo.webp") no-repeat;
   background-size: cover;
+  padding: 16px;
+  &__main-text {
+    color: #fff;
+  }
+  &__title {
+    font-family: typographys.$main-typography;
+    font-size: 40px;
+  }
+  &__subphrase {
+    font-family: typographys.$secondary-typography;
+    font-size: 18px;
+  }
 }
 
 .header__container {
   display: flex;
-  padding: 36px;
+  padding: 20px;
   align-items: center;
   min-width: 100vw;
   justify-content: space-between;
