@@ -13,19 +13,23 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 16px;
+  padding: 100px 16px;
   gap: 20px;
+
   &__main-text {
     color: #fff;
   }
+
   &__title {
     font-family: typographys.$main-typography;
     font-size: 40px;
   }
+
   &__subphrase {
     font-family: typographys.$secondary-typography;
     font-size: 18px;
   }
+
   &__form-booking {
     display: flex;
   }
@@ -82,10 +86,12 @@ body {
   display: flex;
   align-items: center;
   gap: 4px;
+
   &__icon {
     width: 25px;
     height: 27px;
   }
+
   &__name {
     width: 100px;
     height: 20px;
@@ -98,6 +104,15 @@ body {
   background: #fff;
   align-items: center;
   gap: 40px;
+  padding: 30px 16px;
+
+  &__description {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: colors.$card-background-color;
+  }
 }
 
 .titles {
@@ -140,4 +155,16 @@ body {
     font-size: 18px;
     font-family: typographys.$secondary-typography;
   }
+}
+
+.cards__photo {
+  background: url(/src/images/lisbon.webp) no-repeat center center;
+  background-size: cover;
+  width: 288px;
+  height: 286px;
+  border-radius: 26px 26px 0px 0px;
+}
+
+.description__title {
+  font-family: typographys.$main-typography;
 }
