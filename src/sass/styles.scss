@@ -1,7 +1,7 @@
 @use "typographys/typographys";
 @use "reset/reset";
 
-.welcome-section {
+.hero {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -11,12 +11,7 @@
   background-size: cover;
 }
 
-.welcome-section__photo {
-  position: absolute;
-  padding-top: 35.6px;
-}
-
-.welcome-section__header {
+.header-container {
   display: flex;
   justify-content: space-between;
 }
