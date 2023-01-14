@@ -11,8 +11,11 @@
   background-size: cover;
 }
 
-.header-container {
+.header__container {
   display: flex;
+  padding: 36px;
+  align-items: center;
+  min-width: 100vw;
   justify-content: space-between;
 }
 
@@ -28,4 +31,18 @@
 
 .form-booking {
   display: flex;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  &__icon {
+    width: 25px;
+    height: 27px;
+  }
+  &__name {
+    width: 100px;
+    height: 20px;
+  }
 }
