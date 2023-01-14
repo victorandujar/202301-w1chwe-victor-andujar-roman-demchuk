@@ -2,8 +2,10 @@
 @use "reset/reset";
 @use "colors/colors";
 
-.main-content {
-  background: url("/src/images/banner.webp") no-repeat;
+body {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/src/images/banner.webp) no-repeat center center fixed;
+  background-size: cover;
 }
 
 .hero {
@@ -11,7 +13,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  background-size: cover;
   padding: 16px;
   gap: 20px;
   &__main-text {
@@ -68,4 +69,12 @@
     width: 100px;
     height: 20px;
   }
+}
+
+.cards {
+  background: #fff;
+}
+
+.card__photo {
+  border-radius: 20px;
 }
