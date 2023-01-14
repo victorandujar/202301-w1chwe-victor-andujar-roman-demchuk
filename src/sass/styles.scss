@@ -1,2 +1,16 @@
 @use "typographys/typographys";
 @use "reset/reset";
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 320px;
+  height: 1210px;
+  background: url("/src/images/main-photo.webp") no-repeat;
+  background-size: cover;
+}
+
+.welcome-section__photo {
+  position: absolute;
+}
