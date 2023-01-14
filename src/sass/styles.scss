@@ -26,6 +26,9 @@ body {
     font-family: typographys.$secondary-typography;
     font-size: 18px;
   }
+  &__form-booking {
+    display: flex;
+  }
 }
 
 .header__container {
@@ -53,15 +56,25 @@ body {
 .items__item {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
 .items__item label {
   font-family: typographys.$secondary-typography;
   text-transform: uppercase;
+  color: colors.$terciary-color;
 }
 
 .items__item input {
   font-family: typographys.$main-typography;
+  border: none;
+  border-bottom: colors.$main-color solid 1px;
+}
+
+.items__button {
+  min-height: 128px;
+  margin: 0;
+  background-color: colors.$main-color;
   border: none;
 }
 
