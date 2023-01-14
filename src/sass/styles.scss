@@ -77,9 +77,28 @@ body {
 }
 
 .cards {
+  display: flex;
+  flex-direction: column;
   background: #fff;
+  align-items: center;
+  gap: 40px;
+}
+
+.titles {
+  padding: 16px;
+
+  &__title {
+    font-family: typographys.$main-typography;
+    font-size: 40px;
+    border-bottom: 2px solid colors.$main-color;
+    color: colors.$secondary-color;
+  }
+
+  &__subtitle {
+    font-family: typographys.$secondary-typography;
+  }
 }
 
 .card__photo {
-  border-radius: 20px;
+  border-radius: 16px;
 }
