@@ -135,10 +135,9 @@ body {
 
 .card {
   display: flex;
-  justify-content: column;
+  flex-direction: column;
   position: relative;
   background-size: cover;
-  color: #fff;
 
   &__description {
     position: absolute;
@@ -146,6 +145,7 @@ body {
     top: 160px;
     font-size: 24px;
     font-family: typographys.$main-typography;
+    color: #fff;
   }
 
   &__location {
@@ -154,10 +154,24 @@ body {
     top: 200px;
     font-size: 1.8rem;
     font-family: typographys.$secondary-typography;
+    color: #fff;
   }
 
   &__photo {
     border-radius: 16px;
+  }
+
+  &__title {
+    font-family: typographys.$main-typography;
+    font-size: 4rem;
+    color: colors.$secondary-color;
+  }
+
+  &__text {
+    font-family: typographys.$secondary-typography;
+    font-size: 1.8rem;
+    color: colors.$secondary-color;
+    line-height: 2.2em;
   }
 }
 
@@ -226,16 +240,26 @@ body {
 
 .buttons {
   display: flex;
+  gap: 3rem;
 
   &__left {
-    background: url(/src/images/chevron-left.svg) no-repeat;
     height: 6.6rem;
     border: none;
   }
 
   &__right {
-    background: url(/src/images/chevron-rigth.svg) no-repeat;
     height: 6.6rem;
     border: none;
+  }
+}
+
+.footer {
+  display: flex;
+  gap: 2rem;
+
+  &__link {
+    font-family: typographys.$secondary-typography;
+    color: colors.$cards-color;
+    font-size: 2.4rem;
   }
 }

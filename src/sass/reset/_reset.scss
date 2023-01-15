@@ -14,3 +14,13 @@ body {
 html {
   font-size: 62.5%;
 }
+
+a,
+:visited,
+:focus,
+:hover,
+:active {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
