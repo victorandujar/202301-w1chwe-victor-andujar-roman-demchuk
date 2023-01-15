@@ -8,7 +8,7 @@
   align-items: flex-start;
   justify-content: space-between;
   padding: 100px 16px;
-  gap: 20px;
+  gap: 100px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(/src/images/banner.webp) no-repeat;
   background-position: 20% 72%;
@@ -47,23 +47,27 @@
 
 .form-booking {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 595px;
   min-width: 100%;
   background-color: #fff;
   border-radius: 16px;
-  padding: 16px;
+  width: 100%;
 
   &__fields {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
+    padding: 16px;
   }
 }
 
 .fields__field {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 55px;
 }
 
 .field__item {
@@ -80,15 +84,30 @@
   & input {
     font-family: typographys.$main-typography;
     border: none;
-    border-bottom: colors.$main-color solid 1px;
+    border-bottom: colors.$secondary-color solid 1px;
   }
 }
 
-.fields__button {
-  min-height: 128px;
-  margin: 0;
+.end-page {
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%;
   background-color: colors.$main-color;
   border: none;
+  border-radius: 0 0 16px 16px;
+
+  &__button {
+    margin: 0;
+    width: 100%;
+    color: #fff;
+    font-family: typographys.$main-typography;
+    font-size: 3.6rem;
+  }
+
+  &__icon {
+    width: 2.1rem;
+  }
 }
 
 .logo {
@@ -156,6 +175,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: relative;
   gap: 2rem;
 
