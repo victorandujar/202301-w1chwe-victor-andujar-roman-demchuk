@@ -103,21 +103,24 @@ body {
   flex-direction: column;
   background: #fff;
   align-items: center;
+  justify-content: center;
   gap: 40px;
   padding: 30px 16px;
 
   &__description {
+    width: 288px;
     padding: 0 16px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
     background: colors.$card-background-color;
+    border-radius: 16px;
   }
 }
 
 .titles {
   padding: 16px;
-
+  display: inline-block;
   &__title {
     font-family: typographys.$main-typography;
     font-size: 40px;
@@ -157,14 +160,44 @@ body {
   }
 }
 
-.cards__photo {
-  background: url(/src/images/lisbon.webp) no-repeat center center;
-  background-size: cover;
+.description {
+  display: flex;
+  align-content: center;
   width: 288px;
-  height: 286px;
-  border-radius: 26px 26px 0px 0px;
+  flex-wrap: wrap;
+
+  &__title {
+    font-family: typographys.$main-typography;
+    color: colors.$terciary-color;
+  }
+
+  &__text {
+    font-family: typographys.$secondary-typography;
+  }
+
+  &__price {
+    font-family: typographys.$secondary-typography;
+  }
 }
 
-.description__title {
-  font-family: typographys.$main-typography;
+.price {
+  font-family: typographys.$secondary-typography;
+
+  &__text {
+    font-size: 18px;
+  }
+  &__number {
+    font-size: 32px;
+    color: colors.$main-color;
+  }
+}
+
+.photo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  &__offers {
+    border-radius: 26px 26px 0px 0px;
+  }
 }

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travellian</title>
-  <link rel="shortcut icon" href="images/fly-favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="sass/styles.scss">
 </head>
 
@@ -66,13 +66,18 @@
         <h2 class="titles__title">Special Offer</h2>
         <span class="titles__subtitle">Check out our special offers and discounts</span>
       </div>
-      <div class="cards__photo"></div>
       <div class="cards__description description">
+        <div class="description__photo photo">
+          <img src="images/lisbon.webp" alt="Lisbon picture." class="photo__offers" width="288" height="286" />
+        </div>
         <h2 class="description__title">Lisbon, Portugal</h2>
         <p class="description__text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular
           during the renaissance. Passage and going through the cites of the world in classical literature.</p>
-        <span>From</span><span>500€</span>
-        <button>Details</button>
+        <div class="description__price price">
+          <span class="price__text">From</span>
+          <span class="price__number">500€</span>
+        </div>
+        <button class="description__button">Details</button>
       </div>
     </section>
   </main>
