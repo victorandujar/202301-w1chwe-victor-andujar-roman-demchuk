@@ -109,7 +109,6 @@ body {
 
   &__description {
     width: 288px;
-    padding: 0 16px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -119,7 +118,6 @@ body {
 }
 
 .titles {
-  padding: 16px;
   display: inline-block;
   &__title {
     font-family: typographys.$main-typography;
@@ -131,16 +129,15 @@ body {
   &__subtitle {
     font-family: typographys.$secondary-typography;
     color: colors.$terciary-color;
+    font-size: 1.8rem;
   }
 }
 
 .card {
+  display: flex;
+  justify-content: column;
   position: relative;
-  background: url(/src/images/berlin.webp) no-repeat center center;
   background-size: cover;
-  width: 288px;
-  height: 320px;
-  border-radius: 16px;
   color: #fff;
 
   &__description {
@@ -155,40 +152,65 @@ body {
     position: absolute;
     left: 77px;
     top: 200px;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-family: typographys.$secondary-typography;
+  }
+
+  &__photo {
+    border-radius: 16px;
   }
 }
 
-.description {
+.text {
   display: flex;
+  flex-direction: column;
   align-content: center;
   width: 288px;
   flex-wrap: wrap;
+  padding: 2rem;
 
   &__title {
-    font-family: typographys.$main-typography;
+    font-family: typographys.$card_typography;
     color: colors.$terciary-color;
+    font-size: 2.8rem;
   }
 
-  &__text {
+  &__container {
     font-family: typographys.$secondary-typography;
+    font-size: 1.6rem;
   }
 
   &__price {
     font-family: typographys.$secondary-typography;
   }
+
+  &__button {
+    width: 12.7rem;
+    height: 5.6rem;
+    background: colors.$cards-color;
+    border: none;
+    border-radius: 1.2rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: typographys.$secondary-typography;
+    font-size: 2rem;
+  }
 }
 
 .price {
+  display: flex;
   font-family: typographys.$secondary-typography;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0;
 
   &__text {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
+
   &__number {
-    font-size: 32px;
-    color: colors.$main-color;
+    font-size: 3.2rem;
+    color: colors.$cards-color;
   }
 }
 
@@ -199,5 +221,21 @@ body {
 
   &__offers {
     border-radius: 26px 26px 0px 0px;
+  }
+}
+
+.buttons {
+  display: flex;
+
+  &__left {
+    background: url(/src/images/chevron-left.svg) no-repeat;
+    height: 6.6rem;
+    border: none;
+  }
+
+  &__right {
+    background: url(/src/images/chevron-rigth.svg) no-repeat;
+    height: 6.6rem;
+    border: none;
   }
 }
