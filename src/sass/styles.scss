@@ -12,6 +12,7 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(/src/images/banner.webp) no-repeat;
   background-position: 20% 72%;
+  background-size: cover;
 
   &__main-text {
     color: #fff;
@@ -317,6 +318,28 @@
   }
 }
 
+.rating {
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    font-family: typographys.$secondary-typography;
+    font-size: 1.8rem;
+  }
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  font-family: typographys.$secondary-typography;
+  color: colors.$secondary-color;
+  font-size: 1.8rem;
+
+  &__title {
+    text-transform: uppercase;
+  }
+}
+
 @media (min-width: 900px) {
   .container {
     display: flex;
@@ -354,18 +377,6 @@
         font-family: typographys.$secondary-typography;
         font-size: 1.8rem;
       }
-    }
-  }
-
-  .information {
-    display: flex;
-    justify-content: space-between;
-    font-family: typographys.$secondary-typography;
-    color: colors.$secondary-color;
-    font-size: 1.8rem;
-
-    &__title {
-      text-transform: uppercase;
     }
   }
 }
