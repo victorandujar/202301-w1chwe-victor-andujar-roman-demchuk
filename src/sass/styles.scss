@@ -46,7 +46,6 @@
   }
   &__list {
     display: none;
-    visibility: hidden;
   }
 }
 
@@ -349,7 +348,7 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .container {
     display: flex;
     width: 100vw;
@@ -375,6 +374,7 @@
     &__log {
       display: flex;
       gap: 3rem;
+      align-items: center;
     }
   }
   .log {
@@ -387,5 +387,23 @@
         font-size: 1.8rem;
       }
     }
+  }
+
+  .form-booking {
+    display: flex;
+    flex-direction: row;
+    min-height: 10rem;
+    &__fields {
+      display: flex;
+      flex-direction: row;
+    }
+    &__end-page {
+      width: 170px;
+    }
+  }
+  .field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
