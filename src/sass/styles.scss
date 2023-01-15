@@ -165,7 +165,7 @@
   &__title {
     font-family: typographys.$main-typography;
     font-size: 40px;
-    border-bottom: 2px solid colors.$main-color;
+    border-bottom: 3px solid colors.$main-color;
     color: colors.$secondary-color;
   }
 
@@ -336,6 +336,15 @@
 
   &__title {
     text-transform: uppercase;
+  }
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+
+  &__photo {
+    border-radius: 50%;
   }
 }
 
