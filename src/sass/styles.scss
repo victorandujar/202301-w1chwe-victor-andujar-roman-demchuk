@@ -346,26 +346,26 @@
     }
   }
   .log {
-    &__button {
+    .rating {
+      display: flex;
+      justify-content: space-between;
+
+      &__text {
+        font-family: typographys.$secondary-typography;
+        font-size: 1.8rem;
+      }
     }
-.rating {
-  display: flex;
-  justify-content: space-between;
-
-  &__text {
-    font-family: typographys.$secondary-typography;
-    font-size: 1.8rem;
   }
-}
 
-.information {
-  display: flex;
-  justify-content: space-between;
-  font-family: typographys.$secondary-typography;
-  color: colors.$secondary-color;
-  font-size: 1.8rem;
+  .information {
+    display: flex;
+    justify-content: space-between;
+    font-family: typographys.$secondary-typography;
+    color: colors.$secondary-color;
+    font-size: 1.8rem;
 
-  &__title {
-    text-transform: uppercase;
+    &__title {
+      text-transform: uppercase;
+    }
   }
 }
