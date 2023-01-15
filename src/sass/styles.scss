@@ -275,3 +275,9 @@ body {
     font-size: 2.4rem;
   }
 }
+
+@media (min-width: 800px) {
+  body {
+    background: black;
+  }
+}
