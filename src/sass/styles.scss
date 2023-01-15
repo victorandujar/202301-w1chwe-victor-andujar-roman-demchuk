@@ -43,6 +43,15 @@ body {
   justify-content: space-between;
 }
 
+.container {
+  &__button {
+    background: url(/src/images/3lines.svg);
+    border: none;
+    width: 38px;
+    height: 24px;
+  }
+}
+
 .form-booking {
   min-height: 595px;
   min-width: 100%;
