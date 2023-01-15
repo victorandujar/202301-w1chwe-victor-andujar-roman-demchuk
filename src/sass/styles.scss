@@ -46,6 +46,10 @@ body {
     width: 38px;
     height: 24px;
   }
+  &__list {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .form-booking {
@@ -276,8 +280,36 @@ body {
   }
 }
 
-@media (min-width: 800px) {
-  body {
-    background: black;
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+
+    &__button {
+      display: none;
+      visibility: hidden;
+    }
+    &__list {
+      visibility: visible;
+      display: flex;
+    }
+  }
+  .list {
+    font-family: typographys.$secondary-typography;
+    display: flex;
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+    &__log {
+      display: flex;
+      gap: 3rem;
+    }
+  }
+  .log {
+    &__button {
+    }
   }
 }
