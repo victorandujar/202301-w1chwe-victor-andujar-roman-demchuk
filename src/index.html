@@ -17,7 +17,7 @@
         <img src="images/Vector.png" alt="Main logo of the page." class="logo__icon">
         <img src="images/Travellian.png" alt="Travellian. Main name of the company." class="logo__name">
       </div>
-      <button class="header-section__button">button</button>
+      <input class="container__button" alt="Menu">
     </header>
     <section class="hero">
       <div class="hero__main-text">
@@ -25,24 +25,26 @@
         <span class="hero__subphrase">The best travell for your journey begins now.</span>
       </div>
       <div class="hero__form-booking form-booking">
-        <form class="form-booking__items items">
-          <div class="items__item">
-            <label for="destination">Destination</label>
-            <input id="destination" type="text">
+        <form class="form-booking__fields fields">
+          <div class="fields__field field">
+            <div class="field__item">
+              <label for="destination">Destination</label>
+              <input id="destination" type="text">
+            </div>
+            <div class="field__item">
+              <label for="person">Person</label>
+              <input id="person" type="number" min="1" max="10">
+            </div>
+            <div class="field__item">
+              <label for="checkin">Check in</label>
+              <input id="checkin" type="date">
+            </div>
+            <div class="field__item">
+              <label for="checkout">Check out</label>
+              <input id="checkout" type="date">
+            </div>
           </div>
-          <div class="items__item">
-            <label for="person">Person</label>
-            <input id="person" type="number" min="1" max="10">
-          </div>
-          <div class="items__item">
-            <label for="checkin">Check in</label>
-            <input id="checkin" type="date">
-          </div>
-          <div class="items__item">
-            <label for="checkout">Check out</label>
-            <input id="checkout" type="date">
-          </div>
-          <button class="items__button" type="submit">Book now</button>
+          <button class="fields__button" type="submit">Book now</button>
         </form>
       </div>
     </section>

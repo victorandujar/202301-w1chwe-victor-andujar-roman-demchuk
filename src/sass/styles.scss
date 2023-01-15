@@ -29,10 +29,6 @@ body {
     font-family: typographys.$secondary-typography;
     font-size: 18px;
   }
-
-  &__form-booking {
-    display: flex;
-  }
 }
 
 .header__container {
@@ -43,39 +39,55 @@ body {
   justify-content: space-between;
 }
 
+.container {
+  &__button {
+    background: url(/src/images/3lines.svg);
+    border: none;
+    width: 38px;
+    height: 24px;
+  }
+}
+
 .form-booking {
+  display: flex;
   min-height: 595px;
   min-width: 100%;
   background-color: #fff;
   border-radius: 16px;
   padding: 16px;
 
-  &__items {
+  &__fields {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 }
 
-.items__item {
+.fields__field {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.items__item label {
-  font-family: typographys.$secondary-typography;
-  text-transform: uppercase;
-  color: colors.$terciary-color;
+.field__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  & label {
+    font-family: typographys.$secondary-typography;
+    text-transform: uppercase;
+    color: colors.$terciary-color;
+  }
+
+  & input {
+    font-family: typographys.$main-typography;
+    border: none;
+    border-bottom: colors.$main-color solid 1px;
+  }
 }
 
-.items__item input {
-  font-family: typographys.$main-typography;
-  border: none;
-  border-bottom: colors.$main-color solid 1px;
-}
-
-.items__button {
+.fields__button {
   min-height: 128px;
   margin: 0;
   background-color: colors.$main-color;
