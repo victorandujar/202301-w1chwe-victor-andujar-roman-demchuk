@@ -2,19 +2,16 @@
 @use "reset/reset";
 @use "colors/colors";
 
-body {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/src/images/banner.webp) no-repeat center center fixed;
-  background-size: cover;
-}
-
 .hero {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   padding: 100px 16px;
-  gap: 20px;
+  gap: 100px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/src/images/banner.webp) no-repeat;
+  background-position: 20% 72%;
 
   &__main-text {
     color: #fff;
@@ -54,23 +51,27 @@ body {
 
 .form-booking {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 595px;
   min-width: 100%;
   background-color: #fff;
   border-radius: 16px;
-  padding: 16px;
+  width: 100%;
 
   &__fields {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
+    padding: 16px;
   }
 }
 
 .fields__field {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 55px;
 }
 
 .field__item {
@@ -87,15 +88,30 @@ body {
   & input {
     font-family: typographys.$main-typography;
     border: none;
-    border-bottom: colors.$main-color solid 1px;
+    border-bottom: colors.$secondary-color solid 1px;
   }
 }
 
-.fields__button {
-  min-height: 128px;
-  margin: 0;
+.end-page {
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%;
   background-color: colors.$main-color;
   border: none;
+  border-radius: 0 0 16px 16px;
+
+  &__button {
+    margin: 0;
+    width: 100%;
+    color: #fff;
+    font-family: typographys.$main-typography;
+    font-size: 3.6rem;
+  }
+
+  &__icon {
+    width: 2.1rem;
+  }
 }
 
 .logo {
@@ -118,10 +134,10 @@ body {
   display: flex;
   flex-direction: column;
   background: #fff;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 40px;
-  padding: 30px 16px;
+  padding: 60px 16px;
 
   &__description {
     width: 288px;
@@ -131,10 +147,21 @@ body {
     background: colors.$card-background-color;
     border-radius: 16px;
   }
+
+  &__button {
+    width: 18.6rem;
+    height: 6.1rem;
+    background: colors.$cards-color;
+    border: none;
+    border-radius: 1.2rem;
+    color: #fff;
+    font-family: typographys.$secondary-typography;
+    font-size: 2rem;
+    font-weight: 400;
+  }
 }
 
 .titles {
-  display: inline-block;
   &__title {
     font-family: typographys.$main-typography;
     font-size: 40px;
@@ -152,14 +179,15 @@ body {
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: relative;
-  background-size: cover;
+  gap: 2rem;
 
   &__description {
     position: absolute;
     left: 37px;
     top: 160px;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-family: typographys.$main-typography;
     color: #fff;
   }
@@ -175,12 +203,19 @@ body {
 
   &__photo {
     border-radius: 16px;
+    object-fit: cover;
   }
 
   &__title {
     font-family: typographys.$main-typography;
     font-size: 4rem;
     color: colors.$secondary-color;
+  }
+
+  &__subtitle {
+    font-family: typographys.$main-typography;
+    color: colors.$secondary-color;
+    font-size: 2.8rem;
   }
 
   &__text {
@@ -257,6 +292,8 @@ body {
 .buttons {
   display: flex;
   gap: 3rem;
+  justify-content: center;
+  width: 100%;
 
   &__left {
     height: 6.6rem;
@@ -311,5 +348,24 @@ body {
   .log {
     &__button {
     }
+.rating {
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    font-family: typographys.$secondary-typography;
+    font-size: 1.8rem;
+  }
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  font-family: typographys.$secondary-typography;
+  color: colors.$secondary-color;
+  font-size: 1.8rem;
+
+  &__title {
+    text-transform: uppercase;
   }
 }
